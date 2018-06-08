@@ -1,0 +1,30 @@
+<div class="row main-image-container"
+    [ngStyle]="{'background-image':'url('+ bgImageUrl +')'}"
+    [style.height.px]="(mainContainerHeight)*.90">
+    <mat-toolbar class="col-12 main-header"  [style.height.px]="(mainContainerHeight)*.10" >
+            <div class="col-1"></div>
+            <div class="col-3 main-header-title">{{applicationTitle}}</div>	
+            <div class="col-2"></div> 
+            <route-navigator class="col-6"
+            [routeNames]="modulesGroup['headerModules']"     
+            [routeClass]="headerRoutesClass"
+        ></route-navigator>
+    </mat-toolbar>
+    
+</div>
+    
+<div style="background-color: aqua" [style.height.px]="(mainContainerHeight)*.40">
+    
+</div>
+
+<div style="background-color: rgb(0, 255, 64)" [style.height.px]="(mainContainerHeight)*.70">
+    
+</div>
+
+<div style="background-color: white" [style.height.px]="(mainContainerHeight)*.40">
+
+</div>
+
+<div style="background-color: rgb(90, 114, 114)" [style.height.px]="(mainContainerHeight)*.80">
+    
+</div>

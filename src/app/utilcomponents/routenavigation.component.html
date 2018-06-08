@@ -1,0 +1,6 @@
+<div *ngFor="let routename of routeNames" 
+        (click) = 'navigateToRoute(routename)'
+        [ngClass]="routeClass"
+        class = "basic-class"
+    >{{routename}}    
+</div>

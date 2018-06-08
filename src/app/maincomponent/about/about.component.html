@@ -1,0 +1,105 @@
+<div class="row main-image-container"
+    [ngStyle]="{'background-image':'url('+ bgImageUrl +')'}"
+    [style.height.px]="(mainContainerHeight)*.95">
+    <mat-toolbar class="col-12 main-header"  [style.height.px]="(mainContainerHeight)*.10" >
+            <div class="col-1"></div>
+            <div class="col-3 main-header-title">{{applicationTitle}}</div>	
+            <div class="col-2"></div> 
+            <route-navigator class="col-6"
+            [routeNames]="modulesGroup['headerModules']"     
+            [routeClass]="headerRoutesClass"
+        ></route-navigator>
+    </mat-toolbar>
+    <div class="row" class="about-main-container">	
+            <div class="col-3"></div>
+            <div class="col-6 about-main-inner-container">
+                <p class="about-main-description">Discover who am I as a person aside from being a developer</p>
+                <div class="about-main-title">MY PASSIONS AND <br> PERSONALITY</div>                
+            </div>		
+            <div class="col-3"></div>            					
+    </div>    
+</div>
+    
+<div class="row center first-inner-container">
+    <span class="col-3"></span>
+    <div class="col-6 first-elements-container">	
+            <span class="elements-header">A few fun facts about myself.</span><br/><br/>	
+            <p class="elements-description">I like to do painting,dancing. I have a friend who is very annoying. <br/>
+                He is involved in the making of this website. <br/>
+                I love travelling and watching movies. <br/>Super lazy and crazy with my friends and family.</p>			
+    </div>
+    <span class="col-3"></span>
+</div>
+
+<div class="row">
+    <mat-grid-list cols="3" rowHeight="{{(mainContainerHeight)*.80/2}}">
+        <mat-grid-tile
+            *ngFor="let tile of tiles"
+            [colspan]="tile.cols"
+            [rowspan]="tile.rows">
+            <div [ngStyle]="{'background-image':'url('+ tile.imageurl +')'}" class="tile-images"></div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+
+<div class="row leftside second-inner-container">
+    <span class="col-2"></span>
+    <div class="col-8 second-elements-container">
+        <div>
+            <span class="elements-header">Understand who I am as a Person</span>
+            <p class="elements-description">My path as a Front-End developer has led me to a focus in Ruby on Rails and Squarespace development. During the warmer months, I enjoy traveling to some great downhill mountain biking locations or finding a remote lake somewhere new for kayaking. Although the majority of the year, you will find me behind a computer screen. I am a passionate gamer which has had a huge impact on the start of my career, but that's a story for another time.<br>
+                Throughout the years I've worked for places that feel the need to constantly burnout their employees with horrible requests and ridiculous timelines. Having been put through some bad experiences in my past, I've also had some great ones that allowed me to work with some amazing people who have played key roles in my career. I have worked very hard to get where I am today, but I'm just as passionate about where my career is leading me. The challenges that I deal with on a day-to-day basis I find meaningful and rewarding. Bottom line: I honestly love what I do and I will do whatever it takes to further my career. </p>
+        </div>
+        <hr style="margin:50px;">
+        <div>
+            <span class="elements-header">Starting me own work</span>      
+            <p class="elements-description">It's been well over two years since I left the comfort of my full-time job back in March of 2016 to pursue my passion as a Squarespace developer. Until early-2017, I was conducting business under my personal name and was only considered as an Independent contractor. So, with the success of Devonstank.com as a brand, I had to come up with a new brand that would have the ability to grow in that direction I've always wanted. And from that, came the start of my own agency.<br>
+                    SQUAR is a human-first, creative digital agency, located in Harrisburg, PA. This means we focus heavily on users to help spark that emotional response that has so much power to generate a reaction. We say this in one of our promotional videos, but we truly stand by that. Our focus will still be Squarespace development, but will be expanding our services much further in mid-2019.</p>    
+            <video [style.height.px]="(mainContainerHeight)*.60" controls>
+                <source src="{{ 'siya' | media}}" type="video/mp4">
+            </video>   
+            <p class="elements-description">Having worked at a few agencies over the years, I always thought it would be "cool" to run my own someday. However, I never intentionally set myself up mentally or financially to be able to achieve this someday. It's just something that happened due to the right circumstances that were presented to me based on other people's actions. Anyways, if you're interested in knowing more about what SQUAR does and who we work with, feel free to check us out in the link below.</p>                 
+            <div class="elements-actions">
+                    Learn More About Me
+            </div>
+        </div>
+    </div>
+    <span class="col-2"></span>  
+</div>
+
+<div class="row main-image-container"
+    [ngStyle]="{'background-image':'url('+ bgImageUrl +')'}"
+    [style.height.px]="(mainContainerHeight)*.95">            
+</div>
+
+<div class="row center third-inner-container">
+        <span class="col-1"></span>
+        <div class="col-10 third-elements-container">
+            <div class="elements-header">My Instagram feed</div><br><br>
+            <mat-grid-list cols="6" rowHeight="{{(mainContainerHeight)*.55/2}}">
+                <mat-grid-tile 
+                    *ngFor="let tile of instaTiles"
+                    [colspan]="tile.cols"
+                    [rowspan]="tile.rows">
+                    <div [ngStyle]="{'background-image':'url('+ tile.imageurl +')'}" class="insta-tile-images"></div>
+                </mat-grid-tile>
+            </mat-grid-list>
+            <div class="elements-actions">
+                Follow me on Instagram
+            </div>
+        </div>        
+        <span class="col-1"></span>      
+</div>
+
+<div class="row center fourth-inner-container">
+        <span class="col-3"></span>
+        <div class="col-6 fourth-elements-container">	
+            <span class="elements-header">What I've done & what I can do</span><br/><br/>	
+            <p class="elements-description">Feel free to take a deeper look at what I've accomplished over the years and what I'm able to do for you. My resume goes over the standard items, but please understand that I don't embellish my capabilities (no good ever comes out of that).</p>			
+            <div class="elements-actions">
+                    View My Resume
+            </div>
+        </div>
+        <span class="col-3"></span>
+</div>
+

@@ -1,0 +1,38 @@
+<div class="row main-image-container"
+    [ngStyle]="{'background-image':'url('+ bgImageUrl +')'}"
+    [style.height.px]="(mainContainerHeight)*.90">
+    <mat-toolbar class="col-12 main-header"  [style.height.px]="(mainContainerHeight)*.10" >
+            <div class="col-1"></div>
+            <div class="col-3 main-header-title">{{applicationTitle}}</div>	
+            <div class="col-2"></div> 
+            <route-navigator class="col-6"
+            [routeNames]="modulesGroup['headerModules']"     
+            [routeClass]="headerRoutesClass"
+        ></route-navigator>
+    </mat-toolbar>
+    <div class="row" [style.height.px]="(mainContainerHeight)*.80" class="home-main-image-container">	
+        <div class="col-3"></div>
+        <div class="col-6 home-main-image-inner-container">
+            <img class="home-main-image" src = "{{ 'lighthouse' | media}}"><br/>
+            <div class="home-main-title">Practice Project</div>	
+            <p class="home-main-description">This is a practice project. This is a practice project. This is a practice project. This is a practice project</p>
+        </div>		
+        <div class="col-3"></div>            					
+    </div>
+</div>
+    
+<div style="background-color: aqua" [style.height.px]="(mainContainerHeight)*.40">
+    
+</div>
+
+<div style="background-color: rgb(0, 255, 64)" [style.height.px]="(mainContainerHeight)*.70">
+    
+</div>
+
+<div style="background-color: white" [style.height.px]="(mainContainerHeight)*.40">
+
+</div>
+
+<div style="background-color: rgb(90, 114, 114)" [style.height.px]="(mainContainerHeight)*.80">
+    
+</div>

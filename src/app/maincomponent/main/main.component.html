@@ -1,0 +1,16 @@
+<div>
+<router-outlet></router-outlet>
+</div>
+<div class="row bottom-container" 
+	[style.height.px]="(mainContainerHeight)*.40">
+	<span class="col-2"></span>
+	<div class="col-8 bottom-inner-container">
+		<span class="bottom-header">Get a website that looks amazing and actually works.</span><br><br>
+		<route-navigator
+			[routeNames]="modulesGroup['bottomModules']"     
+			[routeClass]="bottomRoutesClass"
+		></route-navigator><br><br>
+		<span class="bottom-credits">TOS .. PP .. TP</span><br><br> 		
+	</div>
+	
+</div>

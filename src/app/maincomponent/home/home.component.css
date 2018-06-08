@@ -1,0 +1,26 @@
+.home-main-image-container{
+    background: transparent;
+    text-align: center;
+}
+.home-main-image-inner-container{
+    height: 100%;
+    background: transparent;
+    padding-top: 10%;
+}
+.home-main-image{
+    width: 26%;
+    height: 45%;
+    border-radius: 50%;
+    background-size: cover;
+}
+.home-main-title{
+    color: white;
+    font-family: inherit;
+    font-size: 200%;
+}
+.home-main-description{
+    color: white;     
+    font-family: inherit;
+    font-size: 100%;
+    font-style: italic;
+}
